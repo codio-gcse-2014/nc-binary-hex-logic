@@ -188,6 +188,57 @@ In the nex section we'll learn how to comvert binary and decimal values into Hex
 
 
 
+---
+title: Hex conversion
+files: []
+
+---
+This first piece of information may freak you out a little. Hex digits can have the following values (decimal goes from 0 to 9): 
+
+0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F
+
+Now look at the table below. What we can see is that each Hex digit represents 4 bits (a nibble).
+
+| Hex | Binary | Decimal |
+|-|-|-|
+| 0 | 0000 | 0 |
+| 1 | 0001 | 1 |
+| 2 | 0010 | 2 |
+| 3 | 0011 | 3 |
+| 4 | 0100 | 4 |
+| 5 | 0101 | 5 |
+| 6 | 0110 | 6 |
+| 7 | 0111 | 7 |
+| 8 | 1000 | 8 |
+| 9 | 1001 | 9 |
+| A | 1010 | 10 |
+| B | 1011 | 11|
+| C | 1100 | 12 |
+| D | 1101 | 13 |
+| E | 1110 | 14 |
+| F | 1111 | 15 |
+
+## Next step
+Now look at the following 2-digit Hex values and refer to the table above to see how simply they combine. Put 2 hex digits together and to the same with the binary values next to them.
+
+| Hex | Binary |
+|-|-|
+| 9F | 10011111 |
+| 57 | 01010111 |
+| 74 | 01110100 |
+
+## Converting any number
+Let's convert decimal 400 into Hex.
+
+
+| 4096 | 256 | 16 | 1
+|-|-|-|
+| 0 | 2 | 4 | 7 | 3 |
+
+
+
+
+
 
 
 ---
