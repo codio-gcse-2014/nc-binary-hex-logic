@@ -94,13 +94,12 @@ Data is typically stored in memory (RAM). Memory is a huge list of locations, ea
 
 So the first three addresses in our memory might look like this
 
-| Memory Address | Decimal | Binary |
+| Memory Address | Decimal Value | Binary Value |
 |-|-|-|
 | 1 | 67   | 0001000011 |
 | 2 | 65   | 0001000001 |
 | 3 | 84   | 0001010100 |
-| 4 | 1024 | 1111111111 |
-| 1
+| 4 | 1023 | 1111111111 |
 
 ## Binary Cat
 You may remember from an earlier module that letters can be represented as numbers in computers as numbers. One simple standard is the **ASCII** (pronounced 'askey') character set. Each number has a unique value. [Click here](http://www.asciitable.com/) to see the ASCII character set on the internet.
@@ -111,11 +110,85 @@ Furthermore, you can see how this is prepresented in memory in binary format.
 
 Now, hopefully, you can see how this binary is represented by the physical transistor states in a memory chip.
 
+
+---
+title: "Bits, nibbles, bytes etc."
+files: []
+
+---
+Here is our memory table again.
+
+| Memory Address | Decimal Value | Binary Value |
+|-|-|-|
+| 1 | 67   | 0001000011 |
+| 2 | 65   | 0001000001 |
+| 3 | 84   | 0001010100 |
+| 4 | 1023 | 1111111111 |
+
+If you look in the binary column above, you can see in memory address 4 that the maximum value it is possible to store is `1111111111` or decimal `1023`.
+
+Do you notice how there are 10 possible positions in the binary number? Each position is actually called a 'bit'. Here is a table to show what various data size terms all mean.
+
+
+
+| Name | # Bits | Binary Range | Decimal Range |
+|-|-|-|-|
+| Bit | 1 | 0 to 1 | 0 to 1 |
+| Nibble | 4 | 0000 to 1111 | 0 to 15 | 
+| Byte | 8 | 00000000 to 11111111 | 0 to 255 | 
+| Word | 16 | 0000000000000000 to 1111111111111111 | 0 to 65535 | 
+
+There are actually more but this will do for now.
 ---
 title: Hexadecimal
 files: []
 
 ---
+Hexadecimal sounds horrendous but it is actually very useful when you get into programming. It's quite scary at first but once you get the hang of it, it's not too bad.
+
+In a web page, colors are often represented as RGB (red, green, blue) numbers. 
+
+Play with the widget below by clicking anywhere within the color area. You can also enter values for the Red, Green and Blue values. 
+
+Each number can be between 0 and 255 (that's a 'byte', remember) and represents the saturation level of each color. When these colors get mixed together you actually end up with 255 * 255 * 255 colors. That makes 16,581,375 colors. 
+
+## So what?
+Well, in the 'CSS' language, which all web pages use, we can sepcify a color as a color value.
+
+The value 10,442,612 is not very friendly and tells us nothing about the RGB values.
+
+But 159, 87, 116 tells us more. However, 15987116 is not the same as  10,442,612. We need a single number.
+
+In CSS we use hexadecimal numbers because each number between 0 and 255 can be represented with 2 digits.
+
+`color: #9F5774`
+
+The # sign tells the browser that the number that follows is a 'Hex' number.
+
+Here's a table to see how we get there
+
+| System | Red | Green | Blue | 
+|-|-|-|-|
+|Decimal | 159|87|116|
+| Binary | 10011111 | 1010111 | 1110100 |
+| Hex | 9F | 57 | 74 |
+
+## The real reason for Hex
+If you look at the above table, you can see that one byte (8 binary digits or bits) is always 2 hex characters. This is really useful in  certain cases as it is compact, always exactly 2 characters wide and  represents one byte, which is an important data size in computing.
+
+In the nex section we'll learn how to comvert binary and decimal values into Hex. It's exactly the same approach as decimal and binary.
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---
 title: Conversion game
